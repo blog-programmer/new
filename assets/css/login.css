@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #181818;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.main__container {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+main {
+  width: 70%;
+}
+
+@font-face {
+  font-family: "Nico-Moji";
+  src: url(../fonts/Nico-Moji.ttf.woff);
+}
+@font-face {
+  font-family: "Aradora-Pro";
+  src: url(../fonts/ArodoraPro-Light.otf);
+}
+@font-face {
+  font-family: "next-art";
+  src: url(../fonts/next-art.otf);
+}
+.main__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto";
+  font-style: normal;
+}
+
+.main__top {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+.login form {
+  width: 60%;
+}
+.login .login__footer {
+  display: flex;
+  align-items: center;
+  gap: 10px 10px;
+}
+.login .login__footer a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+.login .login__footer a:hover {
+  text-decoration: underline;
+  color: #107EFF;
+  transition: 0.2s;
+}
+.login input {
+  border: 0;
+  caret-color: #fff;
+  outline: none;
+  width: 100%;
+  border-bottom: 1px solid #3F3F3F;
+  background-color: inherit;
+  margin-bottom: 25px;
+  height: 25px;
+}
+.login input::placeholder {
+  color: #3F3F3F;
+}
+.login input:focus {
+  border-color: #107EFF;
+}
+.login .submit {
+  display: flex;
+  justify-content: center;
+}
+.login .submit input {
+  width: auto;
+  height: 30px;
+  color: #ffffff;
+  background: #3137C9;
+  box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
+  border-radius: 5px;
+}
+.login .submit input:hover {
+  cursor: pointer;
+  background: #696BA8;
+  transition: 0.5s;
+}
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media screen and (max-width: 1200px) {
+  body .mobile ul li {
+    height: auto !important;
+    display: block;
+  }
+  #sidebar {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
+  main header {
+    display: flex;
+  }
+  main header nav > ul, main header nav > .nav_search {
+    display: none;
+  }
+  main .stories .item__content {
+    width: 100%;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /**/
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  main .cards .card .card__footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  main .cards .card .card__footer .footer__right {
+    margin-bottom: 10px;
+    flex-direction: row;
+    justify-items: center;
+  }
+  .main__view .view__footer .view__links .link {
+    width: 98%;
+    margin-bottom: 10px;
+  }
+  .main__container {
+    margin-top: 20px;
+  }
+  .main__container .main__top {
+    font-size: 15pt;
+  }
+  .cards__works .card__work {
+    flex-direction: column !important;
+  }
+  .cards__works .card__work > * {
+    width: 100% !important;
+  }
+  .main__container .profile {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main__container .profile form {
+    width: 100% !important;
+  }
+  .main__container .profile form .image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .login {
+    width: 90%;
+  }
+  .login form {
+    width: 100%;
+  }
+  .login .login__footer {
+    flex-direction: column;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /**/
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/
+}
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  body .mobile {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=login.css.map */
